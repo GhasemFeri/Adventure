@@ -9,7 +9,7 @@ CREATE TABLE [dbo].[DatabaseLog]
 [TSQL] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [XmlEvent] [xml] NOT NULL
 ) ON [PRIMARY]
-GO
+GO 
 ALTER TABLE [dbo].[DatabaseLog] ADD CONSTRAINT [PK_DatabaseLog_DatabaseLogID] PRIMARY KEY NONCLUSTERED  ([DatabaseLogID]) ON [PRIMARY]
 GO
 EXEC sp_addextendedproperty N'MS_Description', N'Audit table tracking all DDL changes made to the AdventureWorks database. Data is captured by the database trigger ddlDatabaseTriggerLog.', 'SCHEMA', N'dbo', 'TABLE', N'DatabaseLog', NULL, NULL
