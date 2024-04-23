@@ -3,7 +3,7 @@ CREATE TABLE [dbo].[ErrorLog]
 [ErrorLogID] [int] NOT NULL IDENTITY(1, 1),
 [ErrorTime] [datetime] NOT NULL CONSTRAINT [DF_ErrorLog_ErrorTime] DEFAULT (getdate()),
 [UserName] [sys].[sysname] NOT NULL,
-[ErrorNumber] [int] NOT NULL,
+[ErrorNumber] [int] NOT NULL, 
 [ErrorSeverity] [int] NULL,
 [ErrorState] [int] NULL,
 [ErrorProcedure] [nvarchar] (126) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
