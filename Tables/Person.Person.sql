@@ -3,7 +3,7 @@ CREATE TABLE [Person].[Person]
 [BusinessEntityID] [int] NOT NULL,
 [PersonType] [nchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [NameStyle] [dbo].[NameStyle] NOT NULL CONSTRAINT [DF_Person_NameStyle] DEFAULT ((0)),
-[Title] [nvarchar] (180) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Title] [nvarchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [FirstName] [dbo].[Name] NOT NULL,
 [MiddleName] [dbo].[Name] NULL,
 [LastName] [dbo].[Name] NOT NULL,
