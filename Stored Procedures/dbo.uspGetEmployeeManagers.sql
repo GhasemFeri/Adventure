@@ -7,8 +7,8 @@ CREATE PROCEDURE [dbo].[uspGetEmployeeManagers]
     @BusinessEntityID [int]
 AS
 BEGIN
-    SET NOCOUNT ON;   
-  --hjkhjkhjkhjk
+    SET NOCOUNT ON;
+
     -- Use recursive query to list out all Employees required for a particular Manager
     WITH [EMP_cte]([BusinessEntityID], [OrganizationNode], [FirstName], [LastName], [JobTitle], [RecursionLevel]) -- CTE name and columns
     AS (

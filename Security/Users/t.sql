@@ -1,5 +1,3 @@
 IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'NT SERVICE\Winmgmt')
 CREATE LOGIN [NT SERVICE\Winmgmt] FROM WINDOWS
 GO
-CREATE USER [t] FOR LOGIN [NT SERVICE\Winmgmt]
-GO

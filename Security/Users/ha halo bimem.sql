@@ -1,2 +1,0 @@
-CREATE USER [ha halo bimem] WITHOUT LOGIN
-GO
